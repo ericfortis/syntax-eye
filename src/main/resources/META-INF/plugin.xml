@@ -1,0 +1,20 @@
+<idea-plugin>
+  <id>com.ericfortis.syntaxeye</id>
+  <name>Syntax Eye</name>
+  <version>0.0.1</version>
+  <vendor>Eric Fortis</vendor>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationService serviceImplementation="com.ericfortis.syntaxeye.SyntaxEyeSettings"/>
+    <applicationConfigurable
+      parentId="tools"
+      instance="com.ericfortis.syntaxeye.SyntaxEyeConfigurable"
+      displayName="Syntax Eye"/>
+    <editorFactoryListener implementation="com.ericfortis.syntaxeye.SyntaxEyeHighlighter"/>
+    <additionalTextAttributes scheme="Default" file="colorSchemes/SyntaxEyeDefault.xml"/>
+    <additionalTextAttributes scheme="Darcula" file="colorSchemes/SyntaxEyeDarcula.xml"/>
+    <colorSettingsPage implementation="com.ericfortis.syntaxeye.SyntaxEyeColorSettingsPage"/>
+  </extensions>
+</idea-plugin>
