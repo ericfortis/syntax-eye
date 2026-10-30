@@ -1,5 +1,7 @@
 # Syntax Eye
 
+https://plugins.jetbrains.com/plugin/35646-syntax-eye
+
 <!-- Plugin description -->
 Lets you add a configurable
 syntax highlight style (Faint Text) to a list of predefined words.
